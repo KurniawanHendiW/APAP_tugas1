@@ -19,4 +19,10 @@ public class MahasiswaServiceDatabase implements MahasiswaService{
         log.info("Select all mahasiswa");
         return mahasiswaMapper.selectAllMahasiswa();
     }
+
+    @Override
+    public MahasiswaModel selectMahasiswa(String npm){
+        log.info("Select mahasiswa with npm {}", npm);
+        return mahasiswaMapper.selectMahasiswa(npm);
+    }
 }

@@ -9,4 +9,7 @@ import java.util.List;
 public interface MahasiswaMapper {
     @Select("select * from mahasiswa")
     List<MahasiswaModel> selectAllMahasiswa();
+
+    @Select("select * from mahasiswa where npm = #{npm}")
+    MahasiswaModel selectMahasiswa(@Param("npm") String npm);
 }

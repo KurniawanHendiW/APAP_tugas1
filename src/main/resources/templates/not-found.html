@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>404 not found</title>
+        <title>Mahasiswa not found</title>
         <link rel="stylesheet" href="/css/bootstrap.min.css">
     </head>
     <body>
         <div th:replace="fragments/fragment :: header"></div>
         <div class="col-md-12">
-            <h4>Page not found</h4>
+            <h4>Mahasiswa not found</h4>
+            <p th:text="'NPM = ' + ${npm}">mahasiswa NPM</p>
         </div>
         <div th:replace="fragments/fragment :: footer"></div>
     </body>

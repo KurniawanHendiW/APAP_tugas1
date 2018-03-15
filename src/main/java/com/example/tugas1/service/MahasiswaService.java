@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface MahasiswaService {
     List<MahasiswaModel> selectAllMahasiswa();
+
+    MahasiswaModel selectMahasiswa(String npm);
 }
